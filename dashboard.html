@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Price Alert</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>Price Alert</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="dashboard.html" class="nav-item active">
+                    <span class="icon">📊</span> Dashboard
+                </a>
+                <a href="my-trackers.html" class="nav-item">
+                    <span class="icon">📦</span> My Trackers
+                </a>
+                <a href="price-history.html" class="nav-item">
+                    <span class="icon">📈</span> Price History
+                </a>
+                <a href="new-alert.html" class="nav-item">
+                    <span class="icon">🔔</span> New Alert
+                </a>
+                <a href="settings.html" class="nav-item">
+                    <span class="icon">⚙️</span> Settings
+                </a>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar">JD</div>
+                <div class="user-info">
+                    <span class="user-name">John Doe</span>
+                    <span class="user-email">john@example.com</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h2>Dashboard Overview</h2>
+                <div class="header-actions">
+                    <button class="btn-secondary">Export Data</button>
+                    <button class="btn-primary">+ New Alert</button>
+                </div>
+            </header>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-icon">🔔</span>
+                    <div class="stat-info">
+                        <span class="stat-value">12</span>
+                        <span class="stat-label">Active Alerts</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">💰</span>
+                    <div class="stat-info">
+                        <span class="stat-value">$1,250</span>
+                        <span class="stat-label">Total Saved</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">📉</span>
+                    <div class="stat-info">
+                        <span class="stat-value">8</span>
+                        <span class="stat-label">Price Drops</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">🛒</span>
+                    <div class="stat-info">
+                        <span class="stat-value">5</span>
+                        <span class="stat-label">Tracked Items</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <section class="content-section">
+                <h3>Recent Price Drops</h3>
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Store</th>
+                                <th>Original Price</th>
+                                <th>Current Price</th>
+                                <th>Savings</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>iPhone 15 Pro</td>
+                                <td>Amazon</td>
+                                <td>$1,199</td>
+                                <td>$999</td>
+                                <td class="savings">-$200</td>
+                                <td><span class="badge badge-success">Alert Triggered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Samsung TV 55"</td>
+                                <td>Flipkart</td>
+                                <td>$699</td>
+                                <td>$549</td>
+                                <td class="savings">-$150</td>
+                                <td><span class="badge badge-success">Alert Triggered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Nike Air Max</td>
+                                <td>Myntra</td>
+                                <td>$150</td>
+                                <td>$120</td>
+                                <td class="savings">-$30</td>
+                                <td><span class="badge badge-warning">Watching</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="content-section">
+                <h3>Quick Actions</h3>
+                <div class="quick-actions">
+                    <a href="new-alert.html" class="action-card">
+                        <span class="action-icon">➕</span>
+                        <span>Add New Tracker</span>
+                    </a>
+                    <a href="my-trackers.html" class="action-card">
+                        <span class="action-icon">👁️</span>
+                        <span>View All Trackers</span>
+                    </a>
+                    <a href="price-history.html" class="action-card">
+                        <span class="action-icon">📊</span>
+                        <span>View Price History</span>
+                    </a>
+                    <a href="settings.html" class="action-card">
+                        <span class="action-icon">🔔</span>
+                        <span>Notification Settings</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
